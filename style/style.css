@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -------reset------------ */
+
+*{
+    box-sizing: border-box;
+}
+
+.wrap{
+	font-family: Microsoft JhengHei;
+	
+	/* display: flex;
+	flex-direction: column; */
+}
+
+header{
+	
+	background: #e7eeea;
+	display: flex;
+	align-items: center;
+	justify-content:flex-start ;
+	padding-left:50px ;
+	margin-bottom: 20px;
+}
+nav{
+	width: 100%;/* 要寫100%才能滿版 */
+	display: flex;
+	flex-direction: column-reverse;
+	
+}
+
+.nav-menu{
+	display: flex;
+	align-items: flex-start;
+	margin-left: 150px;
+}
+
+.nav-menu a{
+	text-align: center;
+	text-decoration: none;
+	color: #37523d;
+	font-size: 24px;
+	font-weight: 600;
+	padding: 20px;
+	
+}
+
+.nav-menu a:hover{
+	text-decoration: underline ;
+}
+
+.nav-member-profile{
+display: flex;
+flex-direction: row-reverse;
+align-items: flex-end;
+
+}
+
+.nav-member-profile a{
+	display: block;
+	/* border: 1px solid #27523d21; */
+	/* 為了方便看範圍才寫的border */
+	padding: 5px 0px;
+	margin: 15px 0px;
+}
+
+.nav-member-profile img{
+	width: 50%;
+}
+/* 購物車和會員圖右邊會有空間,100%距離是對的200%圖會重疊,50%會產生多出來的空間,不知道要怎麼把多出來的空間消掉 */
+.center-body{
+	width: 1400px;
+	margin: auto;
+}
+
+.max-content-width-container{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.max-content-width-container a{
+	color: #000;
+	text-decoration: none;
+	padding: 0px 10px 0px 0px;
+	
+}
+.max-content-width-container a:hover{
+	color: #7c9989;
+}
+.max-content-width-container p{
+	padding: 0px 10px 0px 0px;
+}
+
+main{
+	display: flex;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.document-toc-container{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.document-toc-container a{
+	text-decoration: none;
+	color: #000;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+.document-toc-container a:hover{
+	color: #7c9989;
+}
+.document-toc-container p{
+	margin-bottom: 10px;
+	background: #e7eeea;
+	padding: 10px;
+	font-weight: 600;
+	color: #37523d;
+}
+
+article{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.commodity-information{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin: 0px 20px 0px 20px;  
+	
+}
+
+.commodity-information p{
+font-size: 14px;
+}
+.commodity-information a{
+text-decoration: none;
+color: #000;
+border: 1px solid #7c9989;
+border-radius: 5px;
+background: #e7eeea;
+padding: 10px;
+}
+
+section ul{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+section ul li{
+	margin: 10px 30px 30px 20px;
+}
+
+.commodity-content:hover{
+	box-shadow: 0px 0px 10px rgb(136, 135, 135);
+	
+}
+
+.commodity-content a{
+	text-decoration: none;
+	color: #000;
+}
+.commodity-content-detailed{
+	padding: 20px;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.commodity-content-detailed-select{
+	display: flex;
+	justify-content: space-between;
+}
+.commodity-content-detailed-select p{
+	color: red;
+}
+
+footer{
+	border-top: 1px solid #e7eeea;
+	padding: 20px 30px 10px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 18px;
+	color: #7c9989;
+	background: #e7eeea;
+	line-height: 1.5;
+}
+.footerl-logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer a{
+	text-decoration: none;
+	display: block;
+	color: #7c9989;
+}
+footer a:hover{
+	color: #337755;
+	font-weight: 600;
+}
